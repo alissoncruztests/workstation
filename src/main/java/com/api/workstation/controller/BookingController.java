@@ -11,23 +11,34 @@ import javax.validation.Valid;
 @Controller
 public class BookingController implements BookingApi {
 
+
     @Override
     public ResponseEntity<ApiBookingResponseTO> createBooking(@Valid ApiBookingTO booking) {
         return null;
     }
 
     @Override
-    public ResponseEntity<Void> createCheckin(String id, @Valid ApiBookingTO product) {
+    public ResponseEntity<Void> createCheckin(String id, @Valid ApiBookingTO booking) {
         return null;
     }
 
     @Override
-    public ResponseEntity<Void> createCheckout(String id, @Valid ApiBookingTO product) {
+    public ResponseEntity<Void> createCheckout(String id, @Valid ApiBookingTO booking) {
         return null;
     }
 
     @Override
-    public ResponseEntity<ApiBookingResponseTO> getBookingsByCodeUser(String codeUser) {
+    public ResponseEntity<ApiBookingResponseTO> getBookingsByCodeUser(String idUser) {
+        return null;
+    }
+
+    @Override
+    public ResponseEntity<ApiBookingResponseTO> getBookingsById(String id) {
+        return null;
+    }
+
+    @Override
+    public ResponseEntity<Void> updateBooking(String id, @Valid ApiBookingTO booking) {
         return null;
     }
 }
